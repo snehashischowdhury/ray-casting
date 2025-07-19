@@ -124,5 +124,14 @@
     #include "../Textures/lost.ppm"
     #include "../Textures/sprites.ppm"   
    All textures are expected to be raw .ppm images.
-
+ # ScreenShots-
    <img width="958" height="589" alt="image" src="https://github.com/user-attachments/assets/f9700b58-aee6-40b0-b925-8677700c265a" />
+
+   <img width="959" height="596" alt="image" src="https://github.com/user-attachments/assets/befdda27-b389-455c-a0bd-a0d65e426260" />
+
+   <img width="936" height="631" alt="image" src="https://github.com/user-attachments/assets/b09a0f49-884b-4527-bff0-33a4e72a5596" />
+
+   <img width="957" height="634" alt="image" src="https://github.com/user-attachments/assets/9fe4c2d4-7084-4d3b-9032-ee2c910f8ea2" />
+
+
+
