@@ -30,8 +30,7 @@
 - float pa;          // angle the player is facing
 
 # Bullet System
-- Each bullet is stored in a bullet struct:
-  
+### Each bullet is stored in a bullet struct:
  ```console  
  typedef struct
  {
@@ -42,13 +41,11 @@
    int life;           //bullet lifetime
  }bullet; 
  ```
-
 ## Max 10 bullets.
 - shootBullet() spawns one.
 - updateBullets() moves and checks collisions with walls and enemy.
    
 # Sprites (Objects in the game world)
-
 ```console
  typedef struct      //All veriables per sprite
   {
@@ -59,8 +56,7 @@
     int hp;
   }sprite;
 ```
-
-- 3 types:
+### 3 types:
 - type=1: key
 - type=2: lights
 - type=3: enemy (Orb King)
@@ -71,64 +67,64 @@
    
 # Doors
 - Can only open if key is picked up (proximity-based).
--  mapW[index] = 4 denotes a door tile.
--  If mapW[index] == 4 && key collected, door opens and showBossBar = 1.
+- mapW[index] = 4 denotes a door tile.
+- If mapW[index] == 4 && key collected, door opens and showBossBar = 1.
 
 # Rendering
 ## drawRays2D()
-- Raycasting algorithm:
+### Raycasting algorithm:
 - Shoots 120 rays in FOV from player's POV.
 - Finds nearest wall intersection per ray.
 - Handles fish-eye correction.
    
 ## Calculates:
-- Wall shading
-- Floor/ceiling textures
-- Depth buffer for sprite rendering
+- Wall shading.
+- Floor/ceiling textures.
+- Depth buffer for sprite rendering.
    
 ## drawSprite()
 - Key
 - Lights
 - Enemy
-- Based on player's rotation and depth.
+  Based on player's rotation and depth.
    
 ## drawBullets()
-- Draws yellow circles representing bullets in 3D space.
+Draws yellow circles representing bullets in 3D space.
    
 ## drawSky()
-- A static background skybox based on pa (player angle).
+A static background skybox based on pa (player angle).
    
 ## drawBossHealthBar()
-- Shows a red health bar for the boss (enemy) at the top-center.
+Shows a red health bar for the boss (enemy) at the top-center.
    
-# Screens-
-- screen(v)
+# Screens
+### screen(v)
 - v == 1: Title screen
 - v == 2: Win screen
 - v == 3: Lose screen
 - All fade in using the fade variable.
     
 # Main Loop= display()
-- Handles the entire game frame by frame:
+### Handles the entire game frame by frame:
 - Movement, rotation.
 - Bullet update.
 - Drawing sky, walls, sprites.
 - Game progression and state handling.
     
 # Entry Point= main()
-- Initializes the GLUT window, sets up callbacks:
+###  Initializes the GLUT window, sets up callbacks:
 - display(): frame rendering
 - ButtonDown(), ButtonUp(): input handling
 - resize(): window resize handling
   
 # Textures
-- Included from:
+### Included from:
 ```console
-##  #include "../Textures/All_Textures.ppm"
-##  #include "../Textures/sky.ppm"
-##  #include "../Textures/title.ppm"
-##  #include "../Textures/won.ppm"
-##  #include "../Textures/lost.ppm"
-##  #include "../Textures/sprites.ppm"
+  #include "../Textures/All_Textures.ppm"
+  #include "../Textures/sky.ppm"
+  #include "../Textures/title.ppm"
+  #include "../Textures/won.ppm"
+  #include "../Textures/lost.ppm"
+  #include "../Textures/sprites.ppm"
 ```  
-- All textures are expected to be raw .ppm images.
+ All textures are expected to be raw .ppm images.
