@@ -1,7 +1,7 @@
 # Ray-Casting
 ## 3D raycasting-based game written in C using OpenGL (GLUT), similar to classic DOOM-style rendering.
 
-# ScreenShots-
+# ScreenShots
    <img width="958" height="589" alt="image" src="https://github.com/user-attachments/assets/f9700b58-aee6-40b0-b925-8677700c265a" />
 
    <img width="959" height="596" alt="image" src="https://github.com/user-attachments/assets/befdda27-b389-455c-a0bd-a0d65e426260" />
@@ -103,20 +103,20 @@
 ## v == 3: Lose screen
 ## All fade in using the fade variable.
     
-# Main Loop- display()
+# Main Loop= display()
 ## Handles the entire game frame by frame:
 ## Movement, rotation.
 ## Bullet update.
 ## Drawing sky, walls, sprites.
 ## Game progression and state handling.
     
-# Entry Point- main()
+# Entry Point= main()
 ## Initializes the GLUT window, sets up callbacks:
 ## display(): frame rendering
 ## ButtonDown(), ButtonUp(): input handling
 ## resize(): window resize handling
   
-# Textures-
+# Textures
 ## Included from:
 ##  #include "../Textures/All_Textures.ppm"
 ##  #include "../Textures/sky.ppm"
