@@ -1,4 +1,4 @@
-# Ray-Casting
+# Ray-Casting (NOTE : Put the .dll file in the lib folder into the build folder)
 3D raycasting-based game written in C using OpenGL (GLUT), similar to classic DOOM-style rendering.
 - NOTE : Put the .dll file in the lib folder into the build folder.
 
